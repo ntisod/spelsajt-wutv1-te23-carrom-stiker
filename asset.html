@@ -8,13 +8,56 @@
     
 </head>
 <body>
-    <div class="section" id="assets">
-        <h2>Assets</h2>
-        <p>
-          The game consists of a square board, 9 white coins, 9 black coins, 1 red queen, and a striker. 
-          A smooth powder is often used to reduce friction on the board for better gameplay.But in the game i have used rigidbody for it to slide
-          and also added a circle collider for the coins to detect collision with the striker and the board.
-        </p>
-    </div>
+  
+    <header>
+        <h1> Game Assets</h1>
+        <p>A breakdown of components used in our digital Carrom game</p>
+      </header>
+    
+      <section>
+        <h2> Core Assets Used</h2>
+        <ul>
+          <li><span class="highlight">Carrom Board:</span> 3D model from Unity Asset Store, styled to reflect an authentic traditional carrom board.</li>
+          <li><span class="highlight">Striker:</span> A realistic striker object with Rigidbody and Collider components for smooth flick mechanics.</li>
+          <li><span class="highlight">Coins:</span> 
+            <ul>
+              <li>8 Black Coins</li>
+              <li>8 White Coins</li>
+              <li>1 Queen (Red)</li>
+            </ul>
+            Each with physics-based interactions for realistic gameplay.
+          </li>
+        </ul>
+      </section>
+    
+      <section>
+        <h2>Assets from Unity Asset Store</h2>
+        <ul>
+          <li><a href="https://assetstore.unity.com/packages/3d/props/carrom-game-assets-3d-pack-119608" target="_blank">Carrom Board & Pieces Pack</a> – Used for 3D models of the board, coins, and striker.</li>
+          <li><a href="https://assetstore.unity.com/packages/3d/props/carrom-game-assets-3d-pack-119608" target="_blank">Tabletop Game Materials</a> – Provided realistic surface textures and wood grain appearance.</li>
+          <li><a href="https://assetstore.unity.com/packages/3d/props/carrom-game-assets-3d-pack-119608" target="_blank">Basic UI Kit</a> – Used to create score display and turn indicators.</li>
+          <li><a href="https://assetstore.unity.com/packages/3d/props/carrom-game-assets-3d-pack-119608" target="_blank">Simple Sound Effects Pack</a> - for striker hits and potting sound feedback.</li>
+        </ul>
+        <p>All third-party assets are used under their respective licenses and for educational purposes only.</p>
+      </section>
+    
+      <section>
+        <h2> Unity Components & Physics</h2>
+        <ul>
+          <li><span class="highlight">Rigidbody:</span> Applied to the striker and coins to enable realistic motion and collisions.</li>
+          <li><span class="highlight">Colliders:</span> Used on all interactive objects including pockets, coins, and striker to manage physics-based interactions.</li>
+          <li><span class="highlight">Physics Materials:</span> Customized to control bounce, slide, and friction for lifelike carrom dynamics.</li>
+          <li><span class="highlight">Scripts:</span> Custom C# scripts manage player input, collision handling, score tracking, and turn logic.</li>
+        </ul>
+      </section>
+    
+      <section>
+        <h2>Additional Features</h2>
+        <ul>
+          <li>Pocket zones with trigger colliders to detect when a coin is potted.</li>
+          <li>Optional sound effects for striking and potting actions (if implemented).</li>
+          <li>User Interface components for score, restart, and player turn indicators (if included).</li>
+        </ul>
+      </section>
 </body>
 </html>
